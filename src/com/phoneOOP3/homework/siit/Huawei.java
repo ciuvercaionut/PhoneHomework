@@ -54,9 +54,6 @@ public abstract class Huawei implements Phone{
         return imei;
     }
 
-
-
-
     @Override
     public void addContact(int nrCrt, String phoneNumber, String firstName, String lastName) {
         Contact contact = new Contact(nrCrt, phoneNumber, firstName, lastName);
