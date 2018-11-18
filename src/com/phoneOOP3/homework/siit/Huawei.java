@@ -104,7 +104,7 @@ public abstract class Huawei implements Phone{
     public void call(String phoneNumber) {
 
         if(batteryLife < 10){
-            System.out.println("\nNot enough battery to make a call!");
+            System.out.println("\nNot enough battery to make another call!Please charge your battery!");
         }else {
             Call call = new Call(phoneNumber);
             calls.add(call);

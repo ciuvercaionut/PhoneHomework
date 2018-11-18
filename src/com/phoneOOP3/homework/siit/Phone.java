@@ -5,6 +5,8 @@ import java.util.ArrayList;
 
 public interface Phone {
 
+    public String getImei();
+
     public void addContact(int nrCrt, String phoneNumber, String firstName, String lastName);
 
     public void listContacts();
