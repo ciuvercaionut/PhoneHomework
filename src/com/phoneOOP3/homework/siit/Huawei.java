@@ -5,7 +5,6 @@ import java.util.Random;
 
 public abstract class Huawei implements Phone{
 
-
     public Huawei(){
 
     }
@@ -58,7 +57,6 @@ public abstract class Huawei implements Phone{
     public void addContact(int nrCrt, String phoneNumber, String firstName, String lastName) {
         Contact contact = new Contact(nrCrt, phoneNumber, firstName, lastName);
         contacts.add(contact);
-
     }
 
     @Override
@@ -95,9 +93,6 @@ public abstract class Huawei implements Phone{
                 System.out.println("Message number " + (i + 1) + " : " + "'" + flag.getContent() + "'");
             }
         }
-
-
-
     }
 
     @Override
@@ -125,13 +120,11 @@ public abstract class Huawei implements Phone{
         Random r = new java.util.Random();
         String s = Integer.toString(r.nextInt() & Integer.MAX_VALUE, 9);
         return s;
-
     }
 
     public double getBatteryLife(double batteryLife){
         System.out.println("\n Current battery life");
         return batteryLife;
-
     }
 
 }
